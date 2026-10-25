@@ -1,0 +1,9 @@
+# Seeded by pr-sandbox for the PR overview's failed-check scenario, 2026-10-25T12:39:18.6010956+00:00. Fails on purpose.
+name: Scenario check
+on: pull_request
+permissions: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Synthetic failure for the PR sandbox." && exit 1
